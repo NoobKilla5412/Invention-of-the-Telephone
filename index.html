@@ -17,10 +17,10 @@
     <script>
         function showHideElement(id) {
             let element = document.getElementById(id);
-            if (!element.hidden){
+            if (!element.hidden) {
                 let elements = document.getElementsByClassName('text');
                 for (const element1 of elements) {
-                    element.hidden = true;
+                    element1.hidden = true;
                 }
             }
             element.hidden = !element.hidden;
