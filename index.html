@@ -14,8 +14,15 @@
     </script>
 
     <button onclick="showHideElement('1844')">1844 - Innocenzo Manzetti</button>
-    <p id="1844">
+    <p id="1844" class="text">
         Innocenzo Manzetti thought of the idea for the telephone. It was a device that used electricity to transmit a person’s voice over an electrical cable. He used this in an automaton he made in 1850. (Manzetti, the real telephone inventor)
     </p>
+
+    <script>
+        let elements = document.getElementsByClassName('text');
+        for (const element of elements) {
+            element.hidden = true;
+        }
+    </script>
 </body>
 </html>
