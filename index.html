@@ -8,12 +8,21 @@
         img {
             width: 2in;
         }
+        p {
+            width: 6in;
+        }
     </style>
 </head>
 <body>
     <script>
         function showHideElement(id) {
             let element = document.getElementById(id);
+            if (!element.hidden){
+                let elements = document.getElementsByClassName('text');
+                for (const element1 of elements) {
+                    element.hidden = true;
+                }
+            }
             element.hidden = !element.hidden;
         }
     </script>
